@@ -1,1 +1,1 @@
-"# Senac_javaScript" 
+Projeto para estudo em javaScript com exemplos.

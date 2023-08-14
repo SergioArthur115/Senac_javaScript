@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento OnClick</title>
+</head>
+<!--
+    Evento para abrir e fechar uma janela
+-->
+
+<body>
+    <button onclick="abreJanela()">Abrir janela</button>
+    <button onclick="fechaJanela()">Fechar janela</button>
+    <script>
+        var minhaJanela;
+
+        function abreJanela() {
+            minhaJanela = window.open("https://www.google.com.br", "", "width=500", "height=300");
+        }
+
+        function fechaJanela() {
+            minhaJanela.close();
+        }
+    </script>
+</body>
+
+</html>

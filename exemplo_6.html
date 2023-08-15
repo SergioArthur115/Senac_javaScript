@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento OnSubmit</title>
+</head>
+<!--
+    Executa o script quando o formulário é executado
+-->
+
+<body>
+    <form action="pp.html" method="post" onsubmit="minhaFuncao()">
+        Digite o seu nome:
+        <input type="text" name="nome">
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+        function minhaFuncao(){
+            alert("Formulário enviado com sucesso!");
+        }
+    </script>
+</body>
+
+</html>

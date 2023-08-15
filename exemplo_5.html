@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Onchange</title>
+</head>
+<!--
+    Executa o script quando o elemento é alterado
+-->
+
+<body>
+    <p>Selecione um carro da lista</p>
+    <select id="selecionado" onchange="minhaFuncao()">
+        <option value="">Selecione uma opção</option>
+        <option value="Opala">Opala</option>
+        <option value="Marea">Marea</option>
+        <option value="Belina">Belina</option>
+        <option value="DellRey">DellRey</option>
+    </select>
+
+    <p>Quando voce selecionar um novo carro, a função "minhaFuncao" é executada e a opção selecionada é apresentada em tela.</p>
+    Digite alguma palavra:
+    <p id="demo"></p>
+    <script>
+        function minhaFuncao(){
+            var x = document.getElementById("selecionado").value;
+            document.getElementById("demo").innerHTML = "Você selecionou: " + x;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Onchange</title>
+</head>
+<!--
+    Executa o script quando o elemento é alterado
+-->
+
+<body>
+    <p>Modifica o texto no campo input, então clique fora do campo para executar a mudança ou clique no botão enter.</p>
+    Digite alguma palavra:
+    <input type="text" name="text" value="olá" onchange="minhaFuncao(this.value)">
+    <script>
+        function minhaFuncao(val){
+            alert("Novo valor do input é: "+ val);
+        }
+
+    </script>
+</body>
+
+</html>

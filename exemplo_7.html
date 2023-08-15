@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento OnReset</title>
+</head>
+<!--
+    Executa o script quando o formulário tem seus valores resetados
+-->
+
+<body>
+    <form action="pp.html" method="post" onreset="minhaFuncao()">
+        Digite o seu nome:
+        <input type="text" name="nome">
+        <input type="reset" value="Resetar">
+    </form>
+    <script>
+        function minhaFuncao(){
+            alert("Formulário resetado com sucesso!");
+        }
+    </script>
+</body>
+
+</html>

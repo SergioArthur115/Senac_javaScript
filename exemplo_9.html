@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onblur</title>
+</head>
+<!--
+    Executa o script quando o elemento perde o foco
+-->
+
+<body>
+    <p>Quando voce tira o foco do campo input, uma função é executada e transforma o texto para maiúscula.</p>
+    Digite o seu nome:
+    <input type="text" id="nome" onblur="minhaFuncao()">
+    <script>
+        function minhaFuncao() {
+            var x = document.getElementById("nome");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</body>
+
+</html>

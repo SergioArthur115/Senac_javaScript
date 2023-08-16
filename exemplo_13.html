@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Onkeydown Onkeyup</title>
+</head>
+<!--
+    Executa o script quando uma techa é presssionada e liberada
+-->
+
+<body>
+    <p>Pressione uma tecla dentro do campo input para mudar a cor de fundo para vermelho, e depois libere a tecla para mudar a cor de fundo para verde.</p>
+    Digite o seu nome:
+    <input type="text" id="demo" onkeydown="keydownFuncao()" onkeyup="keyupFuncao()">
+    <script>
+        function keydownFuncao() {
+            document.getElementById("demo").style.backgroundColor = "red";
+        }
+        function keyupFuncao() {
+            document.getElementById("demo").style.backgroundColor = "green";
+        }
+    </script>
+</body>
+
+</html>

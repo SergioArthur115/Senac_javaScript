@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Onkeypress</title>
+</head>
+<!--
+    Executa o script quando uma techa é presssionada e liberada
+-->
+
+<body>
+    <p>Pressione uma tecla dentro do campo input para mudar a cor de fundo.</p>
+    Digite o seu nome:
+    <input type="text" id="demo">
+    <script>
+        document.getElementById("demo").onkeydown = function() {minhaFuncao()};
+        function minhaFuncao() {
+            document.getElementById("demo").style.backgroundColor = "red";
+        }
+    </script>
+</body>
+
+</html>

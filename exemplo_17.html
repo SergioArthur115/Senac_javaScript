@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onmousemove e onmouseout</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+    }
+</style>
+<!--
+    Executa o script quando clicar no botão do mouse é pressionado(onmousedown) e liberado(onmouseup)
+-->
+
+<body>
+    <div onmousemove="minhaFuncao(event)" onmouseout="limpaCoor()">
+
+    </div>
+    <p>Passe o ponteiro do mouse sobre o retangulo, e veja as coordenadas do ponteiro do seu mouse.</p>
+    <p id="demo"></p>
+    <script>
+        function minhaFuncao(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            var coor = "coordenadas: (" + x + "," + y + ")";
+            document.getElementById("demo").innerHTML = coor;
+        }
+        function limpaCoor() {
+            document.getElementById("demo").innerHTML = "";
+        }
+    </script>
+</body>
+
+</html>

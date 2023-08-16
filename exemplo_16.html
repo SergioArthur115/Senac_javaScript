@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onmousedown e onmouseup</title>
+</head>
+<!--
+    Executa o script quando clicar no botão do mouse é pressionado(onmousedown) e liberado(onmouseup)
+-->
+
+<body>
+    <p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">Clique no texto.</p>
+    <script>
+        function mouseDown() {
+            document.getElementById("p1").style.color = "red";
+        }
+        function mouseUp() {
+            document.getElementById("p1").style.color = "green";
+        }
+    </script>
+</body>
+
+</html>
